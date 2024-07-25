@@ -19,6 +19,13 @@
                 </v-btn>
               </v-col>
             </v-row>
+            <v-row class="mt-2">
+              <v-col class="text-center">
+                <v-btn text @click="redirectToRegister">
+                  Não tem uma conta? Registre-se aqui.
+                </v-btn>
+              </v-col>
+            </v-row>
           </v-form>
         </v-card-text>
       </v-card>
@@ -45,6 +52,10 @@ export default {
         // Implement login logic here
         alert('Login bem-sucedido!');
       }
+    },
+    redirectToRegister() {
+      // Implement the logic to redirect to the registration page
+      this.$router.push('/register');
     },
   },
 };
